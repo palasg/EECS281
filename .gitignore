@@ -1,0 +1,4 @@
+bazel-bin
+bazel-EECS281
+bazel-out
+bazel-testlogs

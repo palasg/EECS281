@@ -1,0 +1,2 @@
+build --action_env=BAZEL_CXXOPTS="-std=c++17:-Werror" 
+build --disk_cache=~/cpp/bazel_tutorials/withGtest/bazel_disk_cache/
