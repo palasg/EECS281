@@ -3,7 +3,7 @@
 #include<chrono>
 
 
-namespace time_utils
+namespace lib
 {
     char* getTimeNow(){
 
