@@ -1,11 +1,11 @@
 #ifndef GET_TIME_HPP
 #define GET_TIME_HPP
 
-namespace time_utils
+namespace lib
 {
     char* getTimeNow();
     
-} // namespace time_utils
+} // namespace lib
 
 
 #endif
