@@ -30,3 +30,11 @@ cc_test(
     copts = ["-Ilib/includes"],
 
 )
+
+cc_test(
+    name = "string_utils_test",
+    srcs = ["string_utils_test.cpp"], 
+    deps =["//lib:string-utils",
+           "@com_google_googletest//:gtest_main"],
+    copts = ["-Ilib/includes", "-g"],
+)

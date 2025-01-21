@@ -32,7 +32,17 @@ cc_library(
 
 cc_library(
     name = "data-structures",
-    hdrs = [ "includes/stacks_queues.hpp"],
+    hdrs = [ "includes/stacks_queues.hpp", 
+     "includes/circular_buffer.hpp"],
     copts = ["-Ilib/includes"],
     visibility = ["//main:__subpackages__"],
 )
+
+cc_library(
+    name = "string-utils",
+    srcs = [ "srcs/string_utils.cpp"], 
+    hdrs = ["includes/string_utils.hpp"],
+    copts = ["-Ilib/includes"],
+    visibility = ["//main:__subpackages__"],
+)
+

@@ -1,4 +1,5 @@
 #include"stacks_queues.hpp"
+#include"circular_buffer.hpp"
 #include<gtest/gtest.h>
 #include<iostream>
 
@@ -39,5 +40,10 @@ TEST(queue, positive_test){
     dummy_queue.pop();
     dummy_queue.pop();
     dummy_queue.pop();
+}
+
+TEST(circular_buffer, positive_simple_test)
+{
+    lib::circularBuffer<int> buff(5);
 }
 
