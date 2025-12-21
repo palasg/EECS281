@@ -8,7 +8,7 @@ cc_test(
 
 filegroup(
     name = "test_data",
-    srcs = ["random_text.txt"]
+    srcs = ["data/random_text.txt"]
 )
 
 cc_test(
@@ -19,7 +19,7 @@ cc_test(
             "//lib:print_utils",
            "@com_google_googletest//:gtest_main"],
     copts = ["-Ilib/includes"],
-    data = [":data/random_text.txt"],
+    data = [":test_data"],
 )
 
 cc_test(

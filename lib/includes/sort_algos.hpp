@@ -16,15 +16,15 @@ namespace lib
         {
             for (int j = 0; j < length; j++)
             {
-                std::cout << "Befor if: First : " << *(std::next(first_copy, i)) << "Second:" <<   *(std::next(first_copy, j)) <<std::endl;
+                //std::cout << "Befor if: First : " << *(std::next(first_copy, i)) << "Second:" <<   *(std::next(first_copy, j)) <<std::endl;
                 if (*(std::next(first_copy, j)) > *(std::next(first_copy, j+1)))
                 {
-                    std::cout << "Inside if \n";
+               //     std::cout << "Inside if \n";
                     const auto value = *(std::next(first_copy, j));
                     *(std::next(first_copy, j)) = *(std::next(first_copy, j+1));
                     *(std::next(first_copy, j+1)) = value;
                 }
-                std::cout << "After if: First : " << *(std::next(first_copy, i)) << "Second:" <<   *(std::next(first_copy, j)) <<std::endl;
+              //  std::cout << "After if: First : " << *(std::next(first_copy, i)) << "Second:" <<   *(std::next(first_copy, j)) <<std::endl;
 
             }
         }
