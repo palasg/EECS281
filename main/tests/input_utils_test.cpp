@@ -8,11 +8,11 @@
 
 TEST(file_reading_test, success)
 {
-    std::string file_relative_path = {"/__main__/main/tests/data/random_text.txt"};
+    std::string file_relative_path = {"/_main/main/tests/data/random_text.txt"};
     std::ifstream f;
 
     const char* test_dir = std::getenv("TEST_SRCDIR");
-    // std::cerr<< "TEST_SRCDIR" << test_dir <<std::endl;
+    std::cerr<< "TEST_SRCDIR" << test_dir <<std::endl;
 
     std::string file_path = std::string(test_dir) + file_relative_path;
 
