@@ -1,3 +1,4 @@
 build --action_env=BAZEL_CXXOPTS="-g" 
+build --action_env=BAZEL_CXXOPTS="-o0" 
 build --action_env=BAZEL_CXXOPTS="-std=c++20" 
 build --disk_cache=~/cpp/bazel_tutorials/withGtest/bazel_disk_cache/

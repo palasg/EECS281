@@ -30,3 +30,11 @@ cc_test(
     copts = ["-Ilib/includes"],
 
 )
+
+cc_test(
+    name = "algo_test", 
+    srcs = ["test_custom_array.cpp"],
+    deps = ["//lib:algos",
+         "@com_google_googletest//:gtest_main"],
+    copts = ["-Ilib/includes","-g0"],
+)

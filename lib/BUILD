@@ -25,7 +25,8 @@ cc_library(
 )
 cc_library(
     name = "algos",
-    hdrs = [ "includes/sort_algos.hpp"],
+    hdrs = [ "includes/sort_algos.hpp", 
+            "includes/custom_array.hpp"],
     copts = ["-Ilib/includes"],
     visibility = ["//main:__subpackages__"],
 )
