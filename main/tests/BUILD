@@ -33,8 +33,9 @@ cc_test(
 
 cc_test(
     name = "algo_test", 
-    srcs = ["test_custom_array.cpp"],
+    srcs = ["test_custom_array.cpp", "test_linked_list.cpp"],
     deps = ["//lib:algos",
+            "//lib:print_utils",
          "@googletest//:gtest_main"],
     copts = ["-Ilib/includes",
     "-Iexternal/gtest/googletest/include",

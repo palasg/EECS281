@@ -14,6 +14,18 @@ namespace lib
         std::cout <<"\n";
         
     }
+
+    template<typename T>
+    void printLinkedList(const T& linkedlist){
+        auto temp = linkedlist.m_head;
+        while (temp!= nullptr)
+        {
+            std::cout << temp->m_data << "," ;
+            temp = temp->m_next;
+        }
+        std::cout << "\n";
+        
+    }
     
 } // namespace lib
 

@@ -68,6 +68,18 @@ TEST(custom_array, insert_without_reallocation){
     EXPECT_EQ(arr1[2],100);
     EXPECT_EQ(arr1[3],5);
     EXPECT_EQ(arr1[10],5);
+}
+
+
+TEST(custom_array, begin_end){
+
+    lib::Array<int> arr1(10,5);
+
+    for (auto& elem : arr1) {
+
+        EXPECT_EQ(elem,5);
+
+    }
 
 
 }

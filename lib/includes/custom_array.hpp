@@ -5,7 +5,8 @@
 #include <cassert>
 #include <utility>
 #include <cstdint>
-#include<iostream>
+
+#include "custom_iterator.hpp"
 
 namespace lib
 {
@@ -48,6 +49,7 @@ namespace lib
             m_data = nullptr;
         }
         T *Get() { return m_data; }
+        
         T &operator[](std::int32_t n)
         {
             if (n < m_size)
@@ -138,6 +140,11 @@ namespace lib
 
             return false;
         }
+        custom_iterator<T> begin(){return custom_iterator<T>{m_data};}
+        const custom_iterator<T> begin()const{return custom_iterator<T>{m_data};}
+
+        custom_iterator<T> end(){return custom_iterator<T>{m_data+m_size};}
+
     };
 
 } // namespace lib

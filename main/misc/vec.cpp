@@ -36,10 +36,10 @@ int32_t MatrixDiagonalSum(const vector_2d& matrix){
 }
 
 bool IsToeplitz(const vector_2d& matrix){
-    
-
 
 }
+
+
 
 
 int main(){
